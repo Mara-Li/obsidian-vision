@@ -14,15 +14,15 @@ A refined editorial theme for [Obsidian](https://obsidian.md). Cream paper with 
 
 ## Screenshots
 
-![Cover](docs/images/cover.png)
+![Vision on macOS](docs/images/mac-cover.png)
+
+**Code and callouts** stay legible without disrupting the page.
+
+![Code and callouts on macOS](docs/images/mac-code.png)
 
 **Tables render as structured grids** — uppercase tracked column headers, hairline row dividers.
 
 ![Tables](docs/images/tables.png)
-
-**Code and callouts** stay legible without disrupting the page.
-
-![Code and callouts](docs/images/code.png)
 
 **The full type scale**, H1 through H6, exercising headings, body, and inline elements.
 
