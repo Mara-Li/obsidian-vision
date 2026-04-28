@@ -1,0 +1,538 @@
+/* ============================================================
+   VISION — an editorial, financial-broadsheet theme for Obsidian
+   Inspired by structured grids, serif typography, and crisp ink.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ---------- LIGHT (primary) -------------------------------- */
+.theme-light {
+  /* Paper */
+  --sardar-paper:        #FAFAF6;
+  --sardar-paper-2:      #F4F3EE;
+  --sardar-ink:          #0B0B0B;
+  --sardar-ink-soft:     #2A2A28;
+  --sardar-mute:         #6B6B66;
+  --sardar-mute-2:       #9A9A93;
+  --sardar-line:         #E4E2DA;
+  --sardar-line-soft:    #ECEAE2;
+  --sardar-accent:       #0B0B0B;
+  --sardar-accent-soft:  #1F1F1D;
+  --sardar-highlight:    #E8E3CF;
+
+  /* Obsidian core variables */
+  --background-primary:        var(--sardar-paper);
+  --background-primary-alt:    var(--sardar-paper-2);
+  --background-secondary:      var(--sardar-paper-2);
+  --background-secondary-alt:  #EFEDE5;
+  --background-modifier-border:        var(--sardar-line);
+  --background-modifier-border-hover:  var(--sardar-line);
+  --background-modifier-border-focus:  var(--sardar-ink);
+  --background-modifier-hover:         rgba(11,11,11,0.04);
+  --background-modifier-active-hover:  rgba(11,11,11,0.06);
+  --background-modifier-form-field:    #FFFFFF;
+  --background-modifier-success:       #1F1F1D;
+  --background-modifier-error:         #5A1A1A;
+
+  --text-normal:    var(--sardar-ink);
+  --text-muted:     var(--sardar-mute);
+  --text-faint:     var(--sardar-mute-2);
+  --text-on-accent: #FAFAF6;
+  --text-accent:    var(--sardar-accent);
+  --text-accent-hover: var(--sardar-accent-soft);
+  --text-selection: rgba(11,11,11,0.10);
+  --text-highlight-bg: var(--sardar-highlight);
+
+  --interactive-accent:        var(--sardar-accent);
+  --interactive-accent-hover:  var(--sardar-accent-soft);
+  --interactive-normal:        #FFFFFF;
+  --interactive-hover:         #F0EEE6;
+
+  --tag-color:      var(--sardar-ink);
+  --tag-background: rgba(11,11,11,0.06);
+
+  --divider-color:  var(--sardar-line);
+
+  /* Grid paper background — subtle financial-statement feel */
+  --sardar-grid:
+    linear-gradient(to right,  rgba(11,11,11,0.035) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(to bottom, rgba(11,11,11,0.035) 1px, transparent 1px) 0 0 / 32px 32px,
+    var(--sardar-paper);
+}
+
+/* ---------- DARK (companion: ink-on-paper inverted) -------- */
+.theme-dark {
+  --sardar-paper:        #111110;
+  --sardar-paper-2:      #161614;
+  --sardar-ink:          #F1EFE6;
+  --sardar-ink-soft:     #D9D6CB;
+  --sardar-mute:         #8A8780;
+  --sardar-mute-2:       #5E5C56;
+  --sardar-line:         #26241F;
+  --sardar-line-soft:    #1D1B17;
+  --sardar-accent:       #F1EFE6;
+  --sardar-accent-soft:  #C9C6BB;
+  --sardar-highlight:    #3A3522;
+
+  --background-primary:        var(--sardar-paper);
+  --background-primary-alt:    var(--sardar-paper-2);
+  --background-secondary:      var(--sardar-paper-2);
+  --background-secondary-alt:  #1A1916;
+  --background-modifier-border:        var(--sardar-line);
+  --background-modifier-border-hover:  #2F2C26;
+  --background-modifier-border-focus:  var(--sardar-ink);
+  --background-modifier-hover:         rgba(241,239,230,0.04);
+  --background-modifier-active-hover:  rgba(241,239,230,0.06);
+  --background-modifier-form-field:    #181715;
+
+  --text-normal:    var(--sardar-ink);
+  --text-muted:     var(--sardar-mute);
+  --text-faint:     var(--sardar-mute-2);
+  --text-on-accent: #111110;
+  --text-accent:    var(--sardar-ink);
+  --text-accent-hover: var(--sardar-accent-soft);
+  --text-selection: rgba(241,239,230,0.12);
+  --text-highlight-bg: var(--sardar-highlight);
+
+  --interactive-accent:        var(--sardar-accent);
+  --interactive-accent-hover:  var(--sardar-accent-soft);
+  --interactive-normal:        #1A1916;
+  --interactive-hover:         #221F1A;
+
+  --tag-color:      var(--sardar-ink);
+  --tag-background: rgba(241,239,230,0.08);
+
+  --divider-color:  var(--sardar-line);
+
+  --sardar-grid:
+    linear-gradient(to right,  rgba(241,239,230,0.025) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(to bottom, rgba(241,239,230,0.025) 1px, transparent 1px) 0 0 / 32px 32px,
+    var(--sardar-paper);
+}
+
+/* ---------- TYPOGRAPHY ------------------------------------- */
+body {
+  --font-text-theme:        'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-interface-theme:   'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-monospace-theme:   'JetBrains Mono', 'SF Mono', Consolas, monospace;
+  --font-text:              var(--font-text-theme);
+  --font-interface:         var(--font-interface-theme);
+  --font-monospace:         var(--font-monospace-theme);
+
+  --font-text-size:         16px;
+  --line-height-normal:     1.65;
+  --line-height-tight:      1.25;
+
+  --h1-size: 2.6em;
+  --h2-size: 2.0em;
+  --h3-size: 1.5em;
+  --h4-size: 1.2em;
+  --h5-size: 1.05em;
+  --h6-size: 0.95em;
+
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 500;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+
+  --h1-line-height: 1.1;
+  --h2-line-height: 1.15;
+  --h3-line-height: 1.2;
+}
+
+/* Serif headings — the magazine voice */
+.markdown-preview-view h1, .markdown-rendered h1, .HyperMD-header-1, .cm-header-1,
+.markdown-preview-view h2, .markdown-rendered h2, .HyperMD-header-2, .cm-header-2,
+.markdown-preview-view h3, .markdown-rendered h3, .HyperMD-header-3, .cm-header-3 {
+  font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+  letter-spacing: -0.01em;
+  color: var(--sardar-ink);
+}
+
+.markdown-preview-view h1, .markdown-rendered h1, .HyperMD-header-1, .cm-header-1 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.markdown-preview-view h4, .markdown-rendered h4, .HyperMD-header-4, .cm-header-4,
+.markdown-preview-view h5, .markdown-rendered h5, .HyperMD-header-5, .cm-header-5,
+.markdown-preview-view h6, .markdown-rendered h6, .HyperMD-header-6, .cm-header-6 {
+  font-family: var(--font-text);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78em;
+  color: var(--sardar-mute);
+  font-weight: 600;
+}
+
+/* Inline title */
+.inline-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 2.8em;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+/* ---------- WORKSPACE & BACKGROUNDS ------------------------ */
+.workspace,
+.workspace-split,
+.workspace-tabs,
+.workspace-leaf {
+  background: var(--sardar-paper);
+}
+
+/* Grid paper feel inside the editor canvas */
+.markdown-source-view,
+.markdown-preview-view,
+.cm-editor {
+  background: var(--sardar-grid) !important;
+  background-attachment: local !important;
+}
+
+/* Reading view — generous editorial column */
+.markdown-preview-view,
+.markdown-source-view.is-live-preview .cm-contentContainer {
+  padding: 4em 5em 8em !important;
+}
+
+.markdown-preview-section,
+.cm-sizer {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ---------- SIDEBARS --------------------------------------- */
+.workspace-ribbon,
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-right {
+  background: var(--sardar-paper-2);
+  border-right: 1px solid var(--sardar-line);
+}
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background: var(--sardar-paper-2);
+  border-right: 1px solid var(--sardar-line);
+}
+
+.nav-folder-title,
+.nav-file-title {
+  border-radius: 0;
+  font-size: 0.86em;
+  letter-spacing: 0.01em;
+  padding: 4px 10px;
+}
+
+.nav-folder-title {
+  text-transform: uppercase;
+  font-size: 0.72em;
+  letter-spacing: 0.16em;
+  color: var(--sardar-mute);
+  font-weight: 600;
+}
+
+.nav-file-title.is-active {
+  background: var(--sardar-ink);
+  color: var(--sardar-paper);
+  font-weight: 500;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background: var(--background-modifier-hover);
+}
+
+/* ---------- TABS ------------------------------------------- */
+.workspace-tab-header-container {
+  background: var(--sardar-paper-2);
+  border-bottom: 1px solid var(--sardar-line);
+  padding-top: 4px;
+}
+
+.workspace-tab-header {
+  background: transparent;
+  border-radius: 0;
+  border: none !important;
+  border-right: 1px solid var(--sardar-line) !important;
+}
+
+.workspace-tab-header.is-active {
+  background: var(--sardar-paper);
+  border-bottom: 2px solid var(--sardar-ink) !important;
+}
+
+.workspace-tab-header-inner-title {
+  font-size: 0.82em;
+  letter-spacing: 0.04em;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--sardar-ink);
+  font-weight: 600;
+}
+
+/* ---------- TITLEBAR / STATUS BAR -------------------------- */
+.titlebar,
+.status-bar {
+  background: var(--sardar-paper-2);
+  border-color: var(--sardar-line);
+  font-size: 0.74em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sardar-mute);
+}
+
+/* ---------- LINKS ------------------------------------------ */
+.cm-link, .external-link, .internal-link,
+a.tag, a {
+  color: var(--sardar-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--sardar-mute-2);
+  transition: text-decoration-color 0.15s ease;
+}
+
+.cm-link:hover, .external-link:hover, .internal-link:hover, a:hover {
+  text-decoration-color: var(--sardar-ink);
+}
+
+/* ---------- BUTTONS ---------------------------------------- */
+button, .clickable-icon, input[type="submit"] {
+  border-radius: 2px;
+}
+
+button.mod-cta,
+.mod-cta {
+  background: var(--sardar-ink) !important;
+  color: var(--sardar-paper) !important;
+  border-radius: 2px !important;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 8px 18px !important;
+  border: 1px solid var(--sardar-ink) !important;
+  text-transform: none;
+}
+
+button.mod-cta:hover {
+  background: var(--sardar-accent-soft) !important;
+}
+
+/* ---------- INPUTS ----------------------------------------- */
+input[type="text"],
+input[type="search"],
+textarea {
+  background: var(--background-modifier-form-field);
+  border: 1px solid var(--sardar-line);
+  border-radius: 2px;
+  font-family: var(--font-text);
+}
+
+.dropdown {
+  background-color: var(--background-modifier-form-field);
+  background-repeat: no-repeat;
+  border: 1px solid var(--sardar-line);
+  border-radius: 2px;
+  font-family: var(--font-text);
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  border-color: var(--sardar-ink);
+  box-shadow: none;
+}
+
+/* ---------- CALLOUTS — like the broadsheet panels ---------- */
+.callout {
+  border-radius: 2px;
+  border: 1px solid var(--sardar-line);
+  background: rgba(255,255,255,0.5);
+  padding: 1em 1.4em;
+  --callout-radius: 2px;
+}
+
+.theme-dark .callout {
+  background: rgba(241,239,230,0.02);
+}
+
+.callout-title {
+  font-family: var(--font-text);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74em;
+  font-weight: 600;
+  color: var(--sardar-mute);
+}
+
+/* ---------- BLOCKQUOTES — the pull-quote ------------------- */
+.markdown-rendered blockquote,
+.HyperMD-quote {
+  border-left: 2px solid var(--sardar-ink);
+  background: transparent;
+  padding: 0.4em 1.6em;
+  margin: 1.6em 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 1.25em;
+  color: var(--sardar-ink-soft);
+  line-height: 1.45;
+}
+
+/* ---------- TABLES — financial-report grid ----------------- */
+.markdown-rendered table {
+  border-collapse: collapse;
+  border: 1px solid var(--sardar-line);
+  font-size: 0.92em;
+  width: 100%;
+}
+
+.markdown-rendered th {
+  background: var(--sardar-paper-2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78em;
+  font-weight: 600;
+  color: var(--sardar-mute);
+  text-align: left;
+  border-bottom: 1px solid var(--sardar-line);
+  padding: 10px 14px;
+}
+
+.markdown-rendered td {
+  border-top: 1px solid var(--sardar-line-soft);
+  padding: 10px 14px;
+}
+
+/* ---------- CODE ------------------------------------------- */
+.markdown-rendered code,
+.cm-inline-code {
+  background: var(--sardar-paper-2);
+  border: 1px solid var(--sardar-line);
+  border-radius: 2px;
+  font-size: 0.88em;
+  padding: 1px 6px;
+  color: var(--sardar-ink);
+}
+
+.markdown-rendered pre,
+.HyperMD-codeblock-bg {
+  background: var(--sardar-paper-2) !important;
+  border: 1px solid var(--sardar-line);
+  border-radius: 2px;
+  font-size: 0.88em;
+}
+
+/* ---------- TAGS — masthead labels ------------------------- */
+.tag, a.tag {
+  background: transparent;
+  color: var(--sardar-ink);
+  border: 1px solid var(--sardar-ink);
+  border-radius: 2px;
+  padding: 1px 8px;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+.tag:hover {
+  background: var(--sardar-ink);
+  color: var(--sardar-paper);
+}
+
+/* ---------- HORIZONTAL RULE — section divider -------------- */
+.markdown-rendered hr,
+.cm-hr {
+  border: none;
+  border-top: 1px solid var(--sardar-line);
+  margin: 2.6em 0;
+  position: relative;
+}
+
+.markdown-rendered hr::after {
+  content: "§";
+  position: absolute;
+  top: -0.7em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--sardar-paper);
+  padding: 0 0.6em;
+  color: var(--sardar-mute-2);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+/* ---------- LISTS ------------------------------------------ */
+.markdown-rendered ul li::marker,
+.markdown-rendered ol li::marker {
+  color: var(--sardar-mute);
+}
+
+/* Checkboxes — squared off */
+input[type="checkbox"] {
+  border-radius: 1px;
+  border: 1px solid var(--sardar-mute);
+}
+
+input[type="checkbox"]:checked {
+  background: var(--sardar-ink);
+  border-color: var(--sardar-ink);
+}
+
+/* ---------- MODALS / SUGGESTIONS --------------------------- */
+.modal,
+.suggestion-container,
+.menu {
+  background: var(--sardar-paper);
+  border: 1px solid var(--sardar-line);
+  border-radius: 2px;
+  box-shadow: 0 12px 40px rgba(11,11,11,0.08);
+}
+
+.suggestion-item.is-selected,
+.menu-item.selected {
+  background: var(--sardar-ink);
+  color: var(--sardar-paper);
+  border-radius: 0;
+}
+
+/* ---------- SCROLLBAR — slim ------------------------------- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb {
+  background: var(--sardar-line);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--sardar-mute-2); }
+
+/* ---------- GRAPH VIEW — ink dots on paper ----------------- */
+.graph-view.color-fill          { color: var(--sardar-ink); }
+.graph-view.color-fill-tag      { color: var(--sardar-mute); }
+.graph-view.color-fill-attachment { color: var(--sardar-mute-2); }
+.graph-view.color-line          { color: var(--sardar-line); }
+.graph-view.color-text          { color: var(--sardar-ink); }
+.graph-view.color-fill-highlight{ color: var(--sardar-ink); }
+.graph-view.color-circle        { color: var(--sardar-ink); }
+
+/* ---------- FILE EXPLORER HEADERS -------------------------- */
+.nav-header,
+.workspace-leaf-content[data-type="file-explorer"] .nav-buttons-container {
+  border-bottom: 1px solid var(--sardar-line);
+}
+
+/* ---------- SEARCH ----------------------------------------- */
+.search-result-file-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.search-result-file-match {
+  font-size: 0.86em;
+}
