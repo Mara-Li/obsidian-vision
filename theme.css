@@ -1,6 +1,6 @@
 /* ============================================================
-   VISION — an editorial, financial-broadsheet theme for Obsidian
-   Inspired by structured grids, serif typography, and crisp ink.
+   VISION — a refined editorial theme for Obsidian
+   Cream paper, serif headings, structured grid, crisp ink.
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
@@ -8,106 +8,106 @@
 /* ---------- LIGHT (primary) -------------------------------- */
 .theme-light {
   /* Paper */
-  --sardar-paper:        #FAFAF6;
-  --sardar-paper-2:      #F4F3EE;
-  --sardar-ink:          #0B0B0B;
-  --sardar-ink-soft:     #2A2A28;
-  --sardar-mute:         #6B6B66;
-  --sardar-mute-2:       #9A9A93;
-  --sardar-line:         #E4E2DA;
-  --sardar-line-soft:    #ECEAE2;
-  --sardar-accent:       #0B0B0B;
-  --sardar-accent-soft:  #1F1F1D;
-  --sardar-highlight:    #E8E3CF;
+  --vision-paper:        #FAFAF6;
+  --vision-paper-2:      #F4F3EE;
+  --vision-ink:          #0B0B0B;
+  --vision-ink-soft:     #2A2A28;
+  --vision-mute:         #6B6B66;
+  --vision-mute-2:       #9A9A93;
+  --vision-line:         #E4E2DA;
+  --vision-line-soft:    #ECEAE2;
+  --vision-accent:       #0B0B0B;
+  --vision-accent-soft:  #1F1F1D;
+  --vision-highlight:    #E8E3CF;
 
   /* Obsidian core variables */
-  --background-primary:        var(--sardar-paper);
-  --background-primary-alt:    var(--sardar-paper-2);
-  --background-secondary:      var(--sardar-paper-2);
+  --background-primary:        var(--vision-paper);
+  --background-primary-alt:    var(--vision-paper-2);
+  --background-secondary:      var(--vision-paper-2);
   --background-secondary-alt:  #EFEDE5;
-  --background-modifier-border:        var(--sardar-line);
-  --background-modifier-border-hover:  var(--sardar-line);
-  --background-modifier-border-focus:  var(--sardar-ink);
+  --background-modifier-border:        var(--vision-line);
+  --background-modifier-border-hover:  var(--vision-line);
+  --background-modifier-border-focus:  var(--vision-ink);
   --background-modifier-hover:         rgba(11,11,11,0.04);
   --background-modifier-active-hover:  rgba(11,11,11,0.06);
   --background-modifier-form-field:    #FFFFFF;
   --background-modifier-success:       #1F1F1D;
   --background-modifier-error:         #5A1A1A;
 
-  --text-normal:    var(--sardar-ink);
-  --text-muted:     var(--sardar-mute);
-  --text-faint:     var(--sardar-mute-2);
+  --text-normal:    var(--vision-ink);
+  --text-muted:     var(--vision-mute);
+  --text-faint:     var(--vision-mute-2);
   --text-on-accent: #FAFAF6;
-  --text-accent:    var(--sardar-accent);
-  --text-accent-hover: var(--sardar-accent-soft);
+  --text-accent:    var(--vision-accent);
+  --text-accent-hover: var(--vision-accent-soft);
   --text-selection: rgba(11,11,11,0.10);
-  --text-highlight-bg: var(--sardar-highlight);
+  --text-highlight-bg: var(--vision-highlight);
 
-  --interactive-accent:        var(--sardar-accent);
-  --interactive-accent-hover:  var(--sardar-accent-soft);
+  --interactive-accent:        var(--vision-accent);
+  --interactive-accent-hover:  var(--vision-accent-soft);
   --interactive-normal:        #FFFFFF;
   --interactive-hover:         #F0EEE6;
 
-  --tag-color:      var(--sardar-ink);
+  --tag-color:      var(--vision-ink);
   --tag-background: rgba(11,11,11,0.06);
 
-  --divider-color:  var(--sardar-line);
+  --divider-color:  var(--vision-line);
 
-  /* Grid paper background — subtle financial-statement feel */
-  --sardar-grid:
+  /* Grid paper background — subtle gridded-paper texture */
+  --vision-grid:
     linear-gradient(to right,  rgba(11,11,11,0.035) 1px, transparent 1px) 0 0 / 32px 32px,
     linear-gradient(to bottom, rgba(11,11,11,0.035) 1px, transparent 1px) 0 0 / 32px 32px,
-    var(--sardar-paper);
+    var(--vision-paper);
 }
 
 /* ---------- DARK (companion: ink-on-paper inverted) -------- */
 .theme-dark {
-  --sardar-paper:        #111110;
-  --sardar-paper-2:      #161614;
-  --sardar-ink:          #F1EFE6;
-  --sardar-ink-soft:     #D9D6CB;
-  --sardar-mute:         #8A8780;
-  --sardar-mute-2:       #5E5C56;
-  --sardar-line:         #26241F;
-  --sardar-line-soft:    #1D1B17;
-  --sardar-accent:       #F1EFE6;
-  --sardar-accent-soft:  #C9C6BB;
-  --sardar-highlight:    #3A3522;
+  --vision-paper:        #111110;
+  --vision-paper-2:      #161614;
+  --vision-ink:          #F1EFE6;
+  --vision-ink-soft:     #D9D6CB;
+  --vision-mute:         #8A8780;
+  --vision-mute-2:       #5E5C56;
+  --vision-line:         #26241F;
+  --vision-line-soft:    #1D1B17;
+  --vision-accent:       #F1EFE6;
+  --vision-accent-soft:  #C9C6BB;
+  --vision-highlight:    #3A3522;
 
-  --background-primary:        var(--sardar-paper);
-  --background-primary-alt:    var(--sardar-paper-2);
-  --background-secondary:      var(--sardar-paper-2);
+  --background-primary:        var(--vision-paper);
+  --background-primary-alt:    var(--vision-paper-2);
+  --background-secondary:      var(--vision-paper-2);
   --background-secondary-alt:  #1A1916;
-  --background-modifier-border:        var(--sardar-line);
+  --background-modifier-border:        var(--vision-line);
   --background-modifier-border-hover:  #2F2C26;
-  --background-modifier-border-focus:  var(--sardar-ink);
+  --background-modifier-border-focus:  var(--vision-ink);
   --background-modifier-hover:         rgba(241,239,230,0.04);
   --background-modifier-active-hover:  rgba(241,239,230,0.06);
   --background-modifier-form-field:    #181715;
 
-  --text-normal:    var(--sardar-ink);
-  --text-muted:     var(--sardar-mute);
-  --text-faint:     var(--sardar-mute-2);
+  --text-normal:    var(--vision-ink);
+  --text-muted:     var(--vision-mute);
+  --text-faint:     var(--vision-mute-2);
   --text-on-accent: #111110;
-  --text-accent:    var(--sardar-ink);
-  --text-accent-hover: var(--sardar-accent-soft);
+  --text-accent:    var(--vision-ink);
+  --text-accent-hover: var(--vision-accent-soft);
   --text-selection: rgba(241,239,230,0.12);
-  --text-highlight-bg: var(--sardar-highlight);
+  --text-highlight-bg: var(--vision-highlight);
 
-  --interactive-accent:        var(--sardar-accent);
-  --interactive-accent-hover:  var(--sardar-accent-soft);
+  --interactive-accent:        var(--vision-accent);
+  --interactive-accent-hover:  var(--vision-accent-soft);
   --interactive-normal:        #1A1916;
   --interactive-hover:         #221F1A;
 
-  --tag-color:      var(--sardar-ink);
+  --tag-color:      var(--vision-ink);
   --tag-background: rgba(241,239,230,0.08);
 
-  --divider-color:  var(--sardar-line);
+  --divider-color:  var(--vision-line);
 
-  --sardar-grid:
+  --vision-grid:
     linear-gradient(to right,  rgba(241,239,230,0.025) 1px, transparent 1px) 0 0 / 32px 32px,
     linear-gradient(to bottom, rgba(241,239,230,0.025) 1px, transparent 1px) 0 0 / 32px 32px,
-    var(--sardar-paper);
+    var(--vision-paper);
 }
 
 /* ---------- TYPOGRAPHY ------------------------------------- */
@@ -148,7 +148,7 @@ body {
 .markdown-preview-view h3, .markdown-rendered h3, .HyperMD-header-3, .cm-header-3 {
   font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
   letter-spacing: -0.01em;
-  color: var(--sardar-ink);
+  color: var(--vision-ink);
 }
 
 .markdown-preview-view h1, .markdown-rendered h1, .HyperMD-header-1, .cm-header-1 {
@@ -163,7 +163,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.78em;
-  color: var(--sardar-mute);
+  color: var(--vision-mute);
   font-weight: 600;
 }
 
@@ -183,14 +183,14 @@ body {
 .workspace-split,
 .workspace-tabs,
 .workspace-leaf {
-  background: var(--sardar-paper);
+  background: var(--vision-paper);
 }
 
 /* Grid paper feel inside the editor canvas */
 .markdown-source-view,
 .markdown-preview-view,
 .cm-editor {
-  background: var(--sardar-grid) !important;
+  background: var(--vision-grid) !important;
   background-attachment: local !important;
 }
 
@@ -210,14 +210,14 @@ body {
 .workspace-ribbon,
 .workspace-ribbon.mod-left,
 .workspace-ribbon.mod-right {
-  background: var(--sardar-paper-2);
-  border-right: 1px solid var(--sardar-line);
+  background: var(--vision-paper-2);
+  border-right: 1px solid var(--vision-line);
 }
 
 .workspace-split.mod-left-split,
 .workspace-split.mod-right-split {
-  background: var(--sardar-paper-2);
-  border-right: 1px solid var(--sardar-line);
+  background: var(--vision-paper-2);
+  border-right: 1px solid var(--vision-line);
 }
 
 .nav-folder-title,
@@ -232,13 +232,13 @@ body {
   text-transform: uppercase;
   font-size: 0.72em;
   letter-spacing: 0.16em;
-  color: var(--sardar-mute);
+  color: var(--vision-mute);
   font-weight: 600;
 }
 
 .nav-file-title.is-active {
-  background: var(--sardar-ink);
-  color: var(--sardar-paper);
+  background: var(--vision-ink);
+  color: var(--vision-paper);
   font-weight: 500;
 }
 
@@ -249,8 +249,8 @@ body {
 
 /* ---------- TABS ------------------------------------------- */
 .workspace-tab-header-container {
-  background: var(--sardar-paper-2);
-  border-bottom: 1px solid var(--sardar-line);
+  background: var(--vision-paper-2);
+  border-bottom: 1px solid var(--vision-line);
   padding-top: 4px;
 }
 
@@ -258,12 +258,12 @@ body {
   background: transparent;
   border-radius: 0;
   border: none !important;
-  border-right: 1px solid var(--sardar-line) !important;
+  border-right: 1px solid var(--vision-line) !important;
 }
 
 .workspace-tab-header.is-active {
-  background: var(--sardar-paper);
-  border-bottom: 2px solid var(--sardar-ink) !important;
+  background: var(--vision-paper);
+  border-bottom: 2px solid var(--vision-ink) !important;
 }
 
 .workspace-tab-header-inner-title {
@@ -272,34 +272,34 @@ body {
 }
 
 .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-  color: var(--sardar-ink);
+  color: var(--vision-ink);
   font-weight: 600;
 }
 
 /* ---------- TITLEBAR / STATUS BAR -------------------------- */
 .titlebar,
 .status-bar {
-  background: var(--sardar-paper-2);
-  border-color: var(--sardar-line);
+  background: var(--vision-paper-2);
+  border-color: var(--vision-line);
   font-size: 0.74em;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--sardar-mute);
+  color: var(--vision-mute);
 }
 
 /* ---------- LINKS ------------------------------------------ */
 .cm-link, .external-link, .internal-link,
 a.tag, a {
-  color: var(--sardar-ink);
+  color: var(--vision-ink);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  text-decoration-color: var(--sardar-mute-2);
+  text-decoration-color: var(--vision-mute-2);
   transition: text-decoration-color 0.15s ease;
 }
 
 .cm-link:hover, .external-link:hover, .internal-link:hover, a:hover {
-  text-decoration-color: var(--sardar-ink);
+  text-decoration-color: var(--vision-ink);
 }
 
 /* ---------- BUTTONS ---------------------------------------- */
@@ -309,18 +309,18 @@ button, .clickable-icon, input[type="submit"] {
 
 button.mod-cta,
 .mod-cta {
-  background: var(--sardar-ink) !important;
-  color: var(--sardar-paper) !important;
+  background: var(--vision-ink) !important;
+  color: var(--vision-paper) !important;
   border-radius: 2px !important;
   font-weight: 500;
   letter-spacing: 0.04em;
   padding: 8px 18px !important;
-  border: 1px solid var(--sardar-ink) !important;
+  border: 1px solid var(--vision-ink) !important;
   text-transform: none;
 }
 
 button.mod-cta:hover {
-  background: var(--sardar-accent-soft) !important;
+  background: var(--vision-accent-soft) !important;
 }
 
 /* ---------- INPUTS ----------------------------------------- */
@@ -328,7 +328,7 @@ input[type="text"],
 input[type="search"],
 textarea {
   background: var(--background-modifier-form-field);
-  border: 1px solid var(--sardar-line);
+  border: 1px solid var(--vision-line);
   border-radius: 2px;
   font-family: var(--font-text);
 }
@@ -336,7 +336,7 @@ textarea {
 .dropdown {
   background-color: var(--background-modifier-form-field);
   background-repeat: no-repeat;
-  border: 1px solid var(--sardar-line);
+  border: 1px solid var(--vision-line);
   border-radius: 2px;
   font-family: var(--font-text);
 }
@@ -344,14 +344,14 @@ textarea {
 input[type="text"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  border-color: var(--sardar-ink);
+  border-color: var(--vision-ink);
   box-shadow: none;
 }
 
-/* ---------- CALLOUTS — like the broadsheet panels ---------- */
+/* ---------- CALLOUTS — bordered panels --------------------- */
 .callout {
   border-radius: 2px;
-  border: 1px solid var(--sardar-line);
+  border: 1px solid var(--vision-line);
   background: rgba(255,255,255,0.5);
   padding: 1em 1.4em;
   --callout-radius: 2px;
@@ -367,63 +367,63 @@ textarea:focus {
   letter-spacing: 0.14em;
   font-size: 0.74em;
   font-weight: 600;
-  color: var(--sardar-mute);
+  color: var(--vision-mute);
 }
 
 /* ---------- BLOCKQUOTES — the pull-quote ------------------- */
 .markdown-rendered blockquote,
 .HyperMD-quote {
-  border-left: 2px solid var(--sardar-ink);
+  border-left: 2px solid var(--vision-ink);
   background: transparent;
   padding: 0.4em 1.6em;
   margin: 1.6em 0;
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-style: italic;
   font-size: 1.25em;
-  color: var(--sardar-ink-soft);
+  color: var(--vision-ink-soft);
   line-height: 1.45;
 }
 
-/* ---------- TABLES — financial-report grid ----------------- */
+/* ---------- TABLES — structured grid ----------------------- */
 .markdown-rendered table {
   border-collapse: collapse;
-  border: 1px solid var(--sardar-line);
+  border: 1px solid var(--vision-line);
   font-size: 0.92em;
   width: 100%;
 }
 
 .markdown-rendered th {
-  background: var(--sardar-paper-2);
+  background: var(--vision-paper-2);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.78em;
   font-weight: 600;
-  color: var(--sardar-mute);
+  color: var(--vision-mute);
   text-align: left;
-  border-bottom: 1px solid var(--sardar-line);
+  border-bottom: 1px solid var(--vision-line);
   padding: 10px 14px;
 }
 
 .markdown-rendered td {
-  border-top: 1px solid var(--sardar-line-soft);
+  border-top: 1px solid var(--vision-line-soft);
   padding: 10px 14px;
 }
 
 /* ---------- CODE ------------------------------------------- */
 .markdown-rendered code,
 .cm-inline-code {
-  background: var(--sardar-paper-2);
-  border: 1px solid var(--sardar-line);
+  background: var(--vision-paper-2);
+  border: 1px solid var(--vision-line);
   border-radius: 2px;
   font-size: 0.88em;
   padding: 1px 6px;
-  color: var(--sardar-ink);
+  color: var(--vision-ink);
 }
 
 .markdown-rendered pre,
 .HyperMD-codeblock-bg {
-  background: var(--sardar-paper-2) !important;
-  border: 1px solid var(--sardar-line);
+  background: var(--vision-paper-2) !important;
+  border: 1px solid var(--vision-line);
   border-radius: 2px;
   font-size: 0.88em;
 }
@@ -431,8 +431,8 @@ textarea:focus {
 /* ---------- TAGS — masthead labels ------------------------- */
 .tag, a.tag {
   background: transparent;
-  color: var(--sardar-ink);
-  border: 1px solid var(--sardar-ink);
+  color: var(--vision-ink);
+  border: 1px solid var(--vision-ink);
   border-radius: 2px;
   padding: 1px 8px;
   font-size: 0.7em;
@@ -443,15 +443,15 @@ textarea:focus {
 }
 
 .tag:hover {
-  background: var(--sardar-ink);
-  color: var(--sardar-paper);
+  background: var(--vision-ink);
+  color: var(--vision-paper);
 }
 
 /* ---------- HORIZONTAL RULE — section divider -------------- */
 .markdown-rendered hr,
 .cm-hr {
   border: none;
-  border-top: 1px solid var(--sardar-line);
+  border-top: 1px solid var(--vision-line);
   margin: 2.6em 0;
   position: relative;
 }
@@ -462,9 +462,9 @@ textarea:focus {
   top: -0.7em;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--sardar-paper);
+  background: var(--vision-paper);
   padding: 0 0.6em;
-  color: var(--sardar-mute-2);
+  color: var(--vision-mute-2);
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
 }
@@ -472,58 +472,58 @@ textarea:focus {
 /* ---------- LISTS ------------------------------------------ */
 .markdown-rendered ul li::marker,
 .markdown-rendered ol li::marker {
-  color: var(--sardar-mute);
+  color: var(--vision-mute);
 }
 
 /* Checkboxes — squared off */
 input[type="checkbox"] {
   border-radius: 1px;
-  border: 1px solid var(--sardar-mute);
+  border: 1px solid var(--vision-mute);
 }
 
 input[type="checkbox"]:checked {
-  background: var(--sardar-ink);
-  border-color: var(--sardar-ink);
+  background: var(--vision-ink);
+  border-color: var(--vision-ink);
 }
 
 /* ---------- MODALS / SUGGESTIONS --------------------------- */
 .modal,
 .suggestion-container,
 .menu {
-  background: var(--sardar-paper);
-  border: 1px solid var(--sardar-line);
+  background: var(--vision-paper);
+  border: 1px solid var(--vision-line);
   border-radius: 2px;
   box-shadow: 0 12px 40px rgba(11,11,11,0.08);
 }
 
 .suggestion-item.is-selected,
 .menu-item.selected {
-  background: var(--sardar-ink);
-  color: var(--sardar-paper);
+  background: var(--vision-ink);
+  color: var(--vision-paper);
   border-radius: 0;
 }
 
 /* ---------- SCROLLBAR — slim ------------------------------- */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-thumb {
-  background: var(--sardar-line);
+  background: var(--vision-line);
   border-radius: 0;
 }
-::-webkit-scrollbar-thumb:hover { background: var(--sardar-mute-2); }
+::-webkit-scrollbar-thumb:hover { background: var(--vision-mute-2); }
 
 /* ---------- GRAPH VIEW — ink dots on paper ----------------- */
-.graph-view.color-fill          { color: var(--sardar-ink); }
-.graph-view.color-fill-tag      { color: var(--sardar-mute); }
-.graph-view.color-fill-attachment { color: var(--sardar-mute-2); }
-.graph-view.color-line          { color: var(--sardar-line); }
-.graph-view.color-text          { color: var(--sardar-ink); }
-.graph-view.color-fill-highlight{ color: var(--sardar-ink); }
-.graph-view.color-circle        { color: var(--sardar-ink); }
+.graph-view.color-fill          { color: var(--vision-ink); }
+.graph-view.color-fill-tag      { color: var(--vision-mute); }
+.graph-view.color-fill-attachment { color: var(--vision-mute-2); }
+.graph-view.color-line          { color: var(--vision-line); }
+.graph-view.color-text          { color: var(--vision-ink); }
+.graph-view.color-fill-highlight{ color: var(--vision-ink); }
+.graph-view.color-circle        { color: var(--vision-ink); }
 
 /* ---------- FILE EXPLORER HEADERS -------------------------- */
 .nav-header,
 .workspace-leaf-content[data-type="file-explorer"] .nav-buttons-container {
-  border-bottom: 1px solid var(--sardar-line);
+  border-bottom: 1px solid var(--vision-line);
 }
 
 /* ---------- SEARCH ----------------------------------------- */

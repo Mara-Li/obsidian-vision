@@ -1,6 +1,6 @@
 # Vision
 
-An editorial, financial-broadsheet inspired theme for [Obsidian](https://obsidian.md). Cream paper with a subtle grid, elegant serif headings, crisp ink accents — built to make notes feel like a structured publication rather than a scratchpad.
+A refined editorial theme for [Obsidian](https://obsidian.md). Cream paper with a subtle grid, elegant serif headings, crisp ink accents — built to make notes feel like a structured manuscript rather than a scratchpad.
 
 ## About Vision
 
@@ -35,17 +35,17 @@ An editorial, financial-broadsheet inspired theme for [Obsidian](https://obsidia
 ### Via git (for contributors)
 
 ```bash
-git clone https://github.com/<your-username>/obsidian-vision.git "<your-vault>/.obsidian/themes/Vision"
+git clone https://github.com/Mukhil-G/obsidian-vision.git "<your-vault>/.obsidian/themes/Vision"
 ```
 
 ## Features
 
 - **Light and dark variants** — cream paper for light, ink-on-paper inverted for dark
-- **Subtle 32px grid background** — financial-statement texture without distracting from text
+- **Subtle 32px grid background** — gridded-paper texture without distracting from text
 - **Editorial typography** — Cormorant Garamond serif for H1–H3, Inter sans for body
 - **Eyebrow labels** — H4–H6 render as uppercase, tracked-out small caps
 - **Pull-quote blockquotes** — italic serif, indented with a hairline rule
-- **Broadsheet tables** — uppercase tracked column headers, hairline row borders
+- **Structured tables** — uppercase tracked column headers, hairline row borders
 - **Section-divider rules** — horizontal rules render with a centered `§` glyph
 - **Outlined tag chips** — squared, uppercase, monospace tracking
 - **Pure-ink CTAs** — squared 2px corners, no rounded buttons
@@ -85,4 +85,4 @@ Pull requests welcome. The theme is a single `theme.css` — no build step.
 
 ## License
 
-[MIT](LICENSE) © 2026 rxzid
+[MIT](LICENSE) © 2026 Mukhil-G
