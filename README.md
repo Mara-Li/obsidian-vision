@@ -14,7 +14,23 @@ A refined editorial theme for [Obsidian](https://obsidian.md). Cream paper with 
 
 ## Screenshots
 
-> _Screenshots coming soon — drop them into `/docs/images/` and reference here._
+![Cover](docs/images/cover.png)
+
+**Tables render as structured grids** — uppercase tracked column headers, hairline row dividers.
+
+![Tables](docs/images/tables.png)
+
+**Code and callouts** stay legible without disrupting the page.
+
+![Code and callouts](docs/images/code.png)
+
+**The full type scale**, H1 through H6, exercising headings, body, and inline elements.
+
+![Type scale](docs/images/type-scale.png)
+
+**Companion dark mode** — ink-on-paper inverted.
+
+![Dark mode](docs/images/dark.png)
 
 ## Installation
 
