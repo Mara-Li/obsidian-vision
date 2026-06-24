@@ -112,9 +112,6 @@
 
 /* ---------- TYPOGRAPHY ------------------------------------- */
 body {
-  --font-text-theme:        'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-interface-theme:   'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-monospace-theme:   'JetBrains Mono', 'SF Mono', Consolas, monospace;
   --font-text:              var(--font-text-theme);
   --font-interface:         var(--font-interface-theme);
   --font-monospace:         var(--font-monospace-theme);
@@ -192,18 +189,6 @@ body {
 .cm-editor {
   background: var(--vision-grid) !important;
   background-attachment: local !important;
-}
-
-/* Reading view — generous editorial column */
-.markdown-preview-view,
-.markdown-source-view.is-live-preview .cm-contentContainer {
-  padding: 4em 5em 8em !important;
-}
-
-.markdown-preview-section,
-.cm-sizer {
-  max-width: 760px;
-  margin: 0 auto;
 }
 
 /* ---------- SIDEBARS --------------------------------------- */
